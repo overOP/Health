@@ -72,7 +72,7 @@ const Footer = () => {
           <p>
             &copy;{" "}
             {
-              new Date().getFullYear() // Get the current year
+              new Date().getFullYear()
             }{" "}
             WebsiteName. All rights reserved
           </p>

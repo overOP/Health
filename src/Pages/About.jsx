@@ -1,4 +1,3 @@
-// About.js
 import React from "react";
 import { useNavigate } from "react-router";
 import A from "../assets/1About.png";
@@ -16,12 +15,12 @@ const About = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full overflow-x-hidden bg-[#bcccdc]">
       {/* Hero Section */}
-      <div className="flex flex-col items-center w-full py-12 px-4 gap-8 bg-[#bcccdc] md:py-16 md:px-8 lg:px-16 lg:flex-row-reverse lg:gap-12 ">
+      <div className="flex flex-col items-center w-full py-12 px-4 gap-8 md:py-16 md:px-8 lg:px-16 lg:flex-row-reverse lg:gap-12">
         <img
           src={A}
-          className="w-full max-w-[300px] h-auto rounded-[25px] md:max-w-[400px] lg:max-w-[500px] lg:flex lg:m-28"
+          className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] rounded-[25px] lg:mr-10"
           alt="About Our Team"
           data-aos="zoom-in"
           data-aos-duration="500"
@@ -29,7 +28,7 @@ const About = () => {
           data-aos-delay="100"
         />
         <div
-          className="flex flex-col items-center text-center lg:items-start lg:text-left lg:flex lg:m-28"
+          className="flex flex-col items-center text-center lg:items-start lg:text-left"
           data-aos="zoom-in"
           data-aos-duration="500"
           data-aos-once="true"
@@ -37,7 +36,7 @@ const About = () => {
           <h2 className="text-2xl font-bold md:text-3xl lg:text-4xl mb-4">
             All About Our Team
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl max-w-[700px]">
             Mental health is vital to overall well-being, shaping how we think,
             feel, and navigate life. We are committed to raising awareness,
             offering support, and promoting mental wellness for all.
@@ -46,7 +45,7 @@ const About = () => {
       </div>
 
       {/* Team Section */}
-      <div className="flex justify-center w-full py-12 px-4 bg-[#bcccdc] md:py-16 md:px-8 lg:px-16">
+      <div className="flex justify-center w-full py-12 px-4 md:py-16 md:px-8 lg:px-16">
         <div
           className="w-full max-w-[1255px] bg-white rounded-[20px] p-6 md:p-8 lg:p-12"
           data-aos="zoom-in"
@@ -56,7 +55,7 @@ const About = () => {
             Meet the Team
           </h2>
           <div
-            className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-3"
+            className="grid grid-cols-2 gap-6 sm:grid-cols-3"
             data-aos="zoom-in"
             data-aos-once="true"
           >

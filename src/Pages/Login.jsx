@@ -41,7 +41,7 @@ const Login = () => {
 
   return (
     <div className="justify-center bg-[#bcccdc] flex w-full gap-[10px] h-[673px]">
-      <ToastContainer /> {/* ✅ Needed for toast to display */}
+      <ToastContainer />
       <div className="lg:absolute lg:mt-10 lg:h-[563px] lg:w-[400px] rounded-[10px] flex flex-col items-center justify-center lg:bg-white text-black">
         <h1 className="text-2xl text-center">
           Welcome back. Your well-being

@@ -20,10 +20,10 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full overflow-x-hidden">
       {/* Hero Section */}
       <div
-        className="flex flex-col lg:flex-row-reverse lg:gap-40 items-center justify-center w-full py-12 px-4 gap-6 bg-[#b2c5e5] md:flex-row md:py-16 md:px-8 lg:px-16"
+        className="flex flex-col lg:flex-row-reverse lg:gap-40 items-center justify-center w-full py-12 px-4 gap-6 bg-[#b2c5e5] md:flex-row md:py-16 md:px-8 lg:px-16 max-w-screen overflow-x-hidden"
         data-aos="zoom-out"
         data-aos-duration="500"
         data-aos-once="true"
@@ -40,8 +40,9 @@ const Home = () => {
             One Step at a Time
           </h2>
           <button
-          onClick={() => navigate("/therapists")}
-          className="bg-[#f6ca56] w-full max-w-[300px] h-[40px] rounded-[10px] mt-4 hover:bg-[#e5b945] transition-colors">
+            onClick={() => navigate("/therapists")}
+            className="bg-[#f6ca56] w-full max-w-[300px] h-[40px] rounded-[10px] mt-4 hover:bg-[#e5b945] transition-colors"
+          >
             Find the therapist
           </button>
         </div>
@@ -49,7 +50,7 @@ const Home = () => {
 
       {/* Quiz Section */}
       <div
-        className="flex flex-col items-center justify-center w-full py-12 px-4 gap-6 bg-[#bcccdc] lg:bg-white md:py-16 md:px-8 lg:px-16"
+        className="flex flex-col items-center justify-center w-full py-12 px-4 gap-6 bg-[#bcccdc] lg:bg-white md:py-16 md:px-8 lg:px-16 max-w-screen overflow-x-hidden"
         data-aos="fade-up"
         data-aos-duration="500"
         data-aos-delay="100"
@@ -72,7 +73,7 @@ const Home = () => {
       </div>
 
       {/* Articles Section */}
-      <div className="flex flex-col items-center w-full py-12 px-4 gap-8 bg-[#bcccdc] md:py-16 md:px-8 lg:px-16">
+      <div className="flex flex-col items-center w-full py-12 px-4 gap-8 bg-[#bcccdc] md:py-16 md:px-8 lg:px-16 max-w-screen overflow-x-hidden">
         <h4 className="text-xl font-bold md:text-2xl">Latest Articles</h4>
 
         <div
@@ -112,7 +113,7 @@ const Home = () => {
 
       {/* Chatbot Section */}
       <div
-        className="flex flex-col items-center w-full py-12 px-4 gap-6 bg-white md:flex-row md:justify-center md:py-16 md:px-8 lg:px-16"
+        className="flex flex-col items-center w-full py-12 px-4 gap-6 bg-white md:flex-row md:justify-center md:py-16 md:px-8 lg:px-16 max-w-screen overflow-x-hidden"
         data-aos="fade-left"
       >
         <div className="flex flex-col items-center text-center max-w-[800px] md:text-center md:items-center">

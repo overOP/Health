@@ -38,7 +38,7 @@ const Signup = () => {
 
       if (response.ok) {
         toast.success(resData.message || "User created successfully");
-        reset(); // Clear form
+        reset();
       } else {
         toast.error(resData.message || "Failed to create user");
       }

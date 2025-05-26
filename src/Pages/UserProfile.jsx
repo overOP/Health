@@ -30,7 +30,6 @@ const UserProfile = () => {
   }
 
   const handleSave = () => {
-    // Normally, you'd update state or send data to a backend here
     therapist.name = editName;
     therapist.bio = editBio;
     therapist.email = editEmail;

@@ -15,7 +15,7 @@ const Blogs = () => {
   console.log(posts);
 
   return (
-    <div className="bg-[#cbd5e1] min-h-screen py-20">
+    <div className="bg-[#cbd5e1] min-h-screen py-20 overflow-x-hidden">
       <div className="max-w-7xl px-4 mx-auto">
         <h1
           className="text-2xl lg:text-5xl lg:font-bold text-center lg:text-white mb-10"
@@ -27,6 +27,8 @@ const Blogs = () => {
         </h1>
         <hr className="border-2 border-white mx-auto mb-10 lg:flex hidden" />
         <p className="text-2xl ml-10 lg:text-white">Top articles</p>
+
+        {/* Blog Grid */}
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 p-7"
           data-aos="fade-up"
@@ -58,18 +60,19 @@ const Blogs = () => {
               </div>
             </div>
           ))}
-          {/* api data */}
-          <ul>
+
+          {/* API Data */}
+          <ul className="col-span-full">
             {loading && <p className="text-blue-500">Data is loading</p>}
             {error && <p className="text-red-500">{error.message}</p>}
             {posts.map((post, index) => (
               <div
                 key={index}
-                className="flex text-white items-center justify-center border-2 border-blue-500 rounded-lg p-3 m-2"
+                className="flex flex-col text-white border-2 border-blue-500 rounded-lg p-3 m-2 overflow-x-auto"
               >
-                <li>{post.id}</li>
-                <li>{post.title}</li>
-                <li>{post.content}</li>
+                <li className="mb-1">ID: {post.id}</li>
+                <li className="mb-1">Title: {post.title}</li>
+                <li className="mb-2">Content: {post.content}</li>
                 <li>
                   {post.image && post.image.length > 0 ? (
                     <div className="flex flex-wrap">
@@ -77,7 +80,7 @@ const Blogs = () => {
                         <img
                           key={idx}
                           src={`http://localhost:3000/${img}`}
-                          className="w-20 h-20 m-2"
+                          className="w-20 h-20 m-2 rounded-md object-cover"
                           alt={post.title}
                         />
                       ))}
@@ -91,10 +94,12 @@ const Blogs = () => {
           </ul>
         </div>
       </div>
-      <div>
+
+      {/* Button */}
+      <div className="mt-10 px-4">
         <button
           onClick={() => navigate("/createablog")}
-          className="text-sm rounded-full hover:underline font-medium bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 ml-[9rem] lg:ml-[48rem]"
+          className="text-sm rounded-full hover:underline font-medium bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 ml-[2rem] lg:ml-[48rem]"
         >
           Create a blog
         </button>

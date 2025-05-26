@@ -39,7 +39,7 @@ const Readmore = () => {
                 ...comment.replies,
                 {
                   id: comment.replies.length + 1,
-                  username: "currentUser", // Replace with logged-in user
+                  username: "currentUser",
                   text: replyContent[commentId],
                   time: "Just now",
                 },

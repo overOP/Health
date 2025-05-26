@@ -10,7 +10,6 @@ const Ai = () => {
       setMessages([...messages, { text: inputValue, sender: "user" }]);
       setInputValue("");
 
-      // Simulate assistant response after a short delay
       setTimeout(() => {
         setMessages((prev) => [
           ...prev,
@@ -38,8 +37,6 @@ const Ai = () => {
 
   const handleQuickReply = (reply) => {
     setMessages([...messages, { text: reply, sender: "user" }]);
-
-    // Simulate different responses based on quick reply
     setTimeout(() => {
       let response;
       switch (reply) {
