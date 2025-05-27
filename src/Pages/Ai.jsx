@@ -65,7 +65,7 @@ const Ai = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen lg:bg-[#bcccdc] lg:p-20 ">
+    <div className="flex flex-col h-auto lg:bg-[#bcccdc] lg:p-20 ">
       <div className="flex flex-col h-screen bg-[#bcccdc] lg:bg-white ">
         {/* Header */}
         <header className=" p-4 shadow-md  lg:rounded-t-[20px] bg-white">
