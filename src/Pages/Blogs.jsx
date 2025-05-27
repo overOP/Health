@@ -99,7 +99,7 @@ const Blogs = () => {
       <div className="mt-10 px-4">
         <button
           onClick={() => navigate("/createablog")}
-          className="text-sm rounded-full hover:underline font-medium bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 ml-[2rem] lg:ml-[48rem]"
+          className="text-sm rounded-full hover:underline font-medium bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 ml-[2rem] lg:ml-[40rem]"
         >
           Create a blog
         </button>
