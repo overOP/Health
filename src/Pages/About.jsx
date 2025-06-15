@@ -17,10 +17,10 @@ const About = () => {
   return (
     <div className="flex flex-col items-center w-full overflow-x-hidden bg-[#bcccdc]">
       {/* Hero Section */}
-      <div className="flex flex-col items-center w-full py-12 px-4 gap-8 md:py-16 md:px-8 lg:px-16 lg:flex-row-reverse lg:gap-12">
+      <div className="flex flex-col items-center w-full py-12 px-4 gap-8 md:py-16 md:px-8 lg:px-16 lg:flex-row-reverse lg:gap-80">
         <img
           src={A}
-          className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] rounded-[25px] lg:mr-10"
+          className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] rounded-[25px] lg:mr-20"
           alt="About Our Team"
           data-aos="zoom-in"
           data-aos-duration="500"

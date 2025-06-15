@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../assets/logo-Photoroom.png";
+import logo from "../assets/red-cross-vector-icon-hospital-sign-medical-health-first-aid-symbol-isolated-vhite-modern-gradient-design-141217893.webp";
 
 const Footer = () => {
   return (
